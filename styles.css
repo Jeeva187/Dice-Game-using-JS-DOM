@@ -1,0 +1,83 @@
+body, h1, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.current-player {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.roll-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.roll-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#currentDice {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+#reset {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    font-size: 24px;
+}
+
+.player {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.player-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.players, .scores {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
